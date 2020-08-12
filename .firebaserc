@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "multiplos-a36bc": {
+      "hosting": {
+        "multiplos-app": [
+          "multiplos-a36bc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "multiplos": "multiplos-a36bc"
+  }
+}

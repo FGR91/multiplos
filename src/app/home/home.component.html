@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="form-group row">
+    <label class="col-md-4 col-form-label">Ingrese un número entero positivo</label>
+    <div class="col-md-6">
+      <input class="form-control" type="number" value="0" #myInput (keydown.enter)="calcular(myInput.value)" />
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-primary btn-block" (click)="calcular(myInput.value)">Calcular</button>
+    </div>
+  </div>
+  <div class="row">
+    <p *ngIf="m3.length > 0">
+      Multiplos de 3: <span style="color: green;">{{ sM3 }}</span>
+    </p>
+  </div>
+  <div class="row">
+    <p *ngIf="m5.length > 0">
+      Multiplos de 5: <span style="color: red;">{{ sM5 }}</span>
+    </p>
+  </div>
+  <div class="row">
+    <p *ngIf="m7.length > 0">
+      Multiplos de 7: <span style="color: blue;">{{ sM7 }}</span>
+    </p>
+  </div>
+</div>
